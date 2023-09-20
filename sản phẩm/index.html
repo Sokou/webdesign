@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land rover Việt Nam</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="icons/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .inner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul#menu1 {
+            display: flex;
+            margin-top: 23px;
+        }
+
+        ul#menu1 a {
+            text-transform: uppercase;
+            padding: 3px 19px;
+        }
+
+        ul#menu1 img {
+            width: 89px;
+            height: 47px;
+            margin: -27px 0px 0px -1px;
+            position: relative;
+            top: 17px;
+            left: -24px;
+        }
+
+        .logo {
+            font-size: 11.5px;
+            color: #0c121c;
+            display: block;
+
+        }
+
+        header {
+            background-color: aliceblue;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: 72px;
+            border-bottom: 1px solid #f5f5f5;
+            z-index: 30;
+        }
+
+        .container {
+            width: 1535px;
+        }
+
+        .leT {
+            position: relative;
+            left: -54px;
+            top: 10px;
+        }
+
+        .leP {
+            position: relative;
+            right: -30px;
+        }
+
+        .leP li i {
+            margin: auto;
+            position: relative;
+            left: -13px;
+            top: 22px;
+        }
+
+        nav {
+            margin-top: -20px;
+        }
+
+        .vung01 {
+            padding: 80px 0px 0px 40px;
+            background-color: #e9ecec;
+            text-align: center;
+            height: 678px;
+        }
+
+        .vung01 h1 {
+            font-size: 40px;
+            margin: 0px 70px 0px 70px;
+        }
+
+        .vung01 p {
+            font-size: 15.5px;
+            margin: 0px 70px 0px 70px;
+        }
+
+        .vung01 b {
+            font-size: 15.5px;
+            margin: 0px 70px 0px 70px;
+        }
+
+        .den {
+            padding-bottom: 80px;
+            background-color: #000;
+            color: white;
+            padding: 16px 31.5px;
+            border: 1px solid black;
+
+        }
+
+        .den:hover {
+            background-color: white;
+            color: #000;
+        }
+
+        .vung02 {
+            background-color: #f8f9f9;
+            height: 678px;
+
+        }
+
+        .vung02 h1 {
+            font-size: 25px;
+            margin: 50px 10px 0px 86px;
+            font-weight: bold;
+        }
+
+        .vung02 p {
+            font-size: 15px;
+            margin: 0px 10px 0px 86px;
+        }
+
+        .vung02 a {
+            margin: 0px 0px 0px 86px;
+        }
+
+        .vung02 img {
+            width: 964px;
+            height: 600px;
+            position: relative;
+            left: 40px;
+        }
+
+        .vung03 {
+            text-align: center;
+            padding: 50px 0px 70px 0px;
+        }
+
+        .vung03 h1 {
+            font-weight: bold;
+        }
+
+        .vung04 {
+            width: 1464px;
+            height: 470px;
+            margin: 0px 20px 0px 70px;
+            line-height: 25px;
+        }
+
+        .vung04 img {
+            width: 85%;
+            height: 210px;
+        }
+
+        .vung04 h1 {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .vung04 p {
+            width: 80%;
+        }
+
+        .vung04 a {
+            color: black;
+        }
+
+        .vung05 {
+            width: 1550px;
+            height: 600px;
+            padding: 60px 0px 0px 80px;
+            line-height: 30px;
+            background-color: #4a4f54;
+        }
+
+        .vung05 img {
+            width: 85%;
+            height: 195px;
+        }
+
+        .vung05 h1 {
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .vung05 p {
+            width: 85%;
+            color: white;
+        }
+
+        .vung05 a {
+            color: white;
+            font-size: 13px;
+        }
+
+        .vung06 {
+            width: 1550px;
+            height: 200px;
+            padding: 50px 0px 0px 80px;
+        }
+
+        .vung06 a i {
+            font-size: 45px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .vung06 a iframe:hover {
+            color: rgb(174, 238, 110);
+        }
+
+        .vung06 a {
+            color: black;
+        }
+
+        .vung06 a:hover {
+            color: rgb(174, 238, 110);
+        }
+
+        .vung06 p {
+            width: 80%;
+            margin-top: 10px;
+        }
+
+        .gachdoc {
+            border-right: 1px solid black;
+            height: 100%;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .vung07 {
+            height: 500px;
+            padding: 50px 0px 0px 60px;
+            background-color: #4a4f54;
+            color: white;
+        }
+
+        .vung07 ul {
+            margin-top: 70px;
+        }
+
+        .vung07 a {
+            color: white;
+            font-size: 10px;
+
+        }
+
+        .vung07 .li1 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 9px;
+        }
+
+        #a3 {
+            line-height: 25px;
+        }
+
+        .vung07 i {
+            margin-bottom: 10px;
+            margin-right: 15px;
+            background-color: #000;
+            color: white;
+            padding: 17px;
+            border: 1px solid black;
+            font-size: 20px;
+        }
+
+        .vung07 .fb:hover {
+            background-color: #305891;
+            color: white;
+        }
+
+        .vung07 .ins:hover {
+            background-color: #406e95;
+            color: white;
+        }
+
+        .vung07 .yt:hover {
+            background-color: #e62d27;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class=" col-md-12">
+            <header>
+                <div class="inner-header container">
+                    <nav>
+                        <ul id="menu1" class="leT">
+                            <li><img src="images/logo.webp" /></li>
+                            <li><a class="logo" href="#"><b>CÁC MẪU XE</b></a></li>
+                            <li><a class="logo" href="https://www.landrover-vn.com/cars-in-stock"><b>XE CÓ SẴN</b></a>
+                            </li>
+                            <li><a class="logo" href="#"><b>ƯU ĐÃI VÀ TÀI CHÍNH</b></a></li>
+                            <li><a class="logo"
+                                    href="https://approved.vn.landrover.com/vi_vn/searchresults?_ga=2.245718916.16703992.1631000916-862892867.1629954246"><b>XE
+                                        ĐÃ QUA SỬ DỤNG</b></a></li>
+                            <li><a class="logo" href="#"><b>QUYỀN SỞ HỮU</b></a></li>
+                            <li><a class="logo" href="#"><b>KHÁM PHÁ</b></a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul id="menu1" class="leP">
+                            <li><i class="fa fa-list-alt" aria-hidden="true"></i><a class="logo"
+                                    href="https://cdn-jaguarlandrover.com/system/apio/vn/VN_LandRover_PriceSheet.pdf?_ga=2.245718916.16703992.1631000916-862892867.1629954246"
+                                    style="margin-right: 25px;"><b>XEM BẢNG GIÁ XE</b></a></li>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i><a class="logo"
+                                    href="https://www.landrover-vn.com/retailer-locator"
+                                    style="margin-right: 25px;"><b>LIÊN HỆ ĐẠI LÝ</b></a></li>
+                            <li><i class="fa fa-search" aria-hidden="true"></i><a class="logo" href="#"
+                                    style="margin-right: 15px;"><b>TÌM KIẾM</b></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row" style="z-index: 20; ">
+            <div class=" col-md-12" style="padding-left: 0px; padding-right: 0px;">
+                <div id="Vcarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img style="height:721px; width: 1535px; " src="images/carousel1.jpg" alt="h1"
+                                class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img style="height: 721px; width: 1535px;" src="images/carousel2.jpg" alt="h2"
+                                class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img style="height: 721px; width: 1535px;" src="images/carousel3.jpg" alt="h3"
+                                class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img style="height: 721px; width: 1535px;" src="images/carousel4.jpg" alt="h4"
+                                class="img-responsive">
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#Vcarousel" data-slide-to="0"></li>
+                            <li data-target="#Vcarousel" data-slide-to="1"></li>
+                            <li data-target="#Vcarousel" data-slide-to="2"></li>
+                            <li data-target="#Vcarousel" data-slide-to="3"></li>
+                        </ol>
+                        <a href="#Vcarousel" class="left carousel-control" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#Vcarousel" class="right carousel-control" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vung01">
+        <b>
+            <h1>SỰ AN TOÀN VÀ SỨC KHỎE CỦA QUÝ KHÁCH LUÔN LÀ ƯU TIÊN HÀNG ĐẦU</h1>
+        </b><br><br>
+        <p>Nhằm ngăn chặn sự lây lan của vi-rút COVID-19 trong cộng đồng, theo công văn của Chính phủ và UBND TP.HCM,
+            Land Rover TP.HCM sẽ tạm thời đóng cửa Phòng trưng bày sản phẩm và Xưởng dịch tại:</p><br>
+        <b>Phòng Trưng Bày</b>
+        <p>Địa chỉ: Trung tâm Thương mại Crescent Mall. Tầng trệt, 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7, TP.HCM</p>
+        <b>Xưởng Dịch Vụ:</b>
+        <p>Địa chỉ: 172 Hoàng Quốc Việt, Phường Phú Mỹ, Quận 7, TP.HCM</p>
+        <b>Thời gian:</b>
+        <p>Từ nay cho đến khi có thông báo mới</p><br>
+        <p>Trong thời gian này, bộ phận kinh doanh vẫn sẵn sàng tư vấn thông tin các mẫu xe Land Rover mới nhất qua
+            hotline 0862 015 068. Ngoài ra, Quý khách có thể gọi đến hotline 086 201 5088 để được hỗ trợ 24/7 các vấn đề
+            liên quan đến dịch vụ bảo dưỡng, bảo hành và sửa chữa.</p><br>
+        <p>Land Rover Việt Nam mong nhận được sự thông cảm từ Quý khách và hy vọng sẽ tiếp tục được phục vụ Quý khách
+            trong thời gian tới.</p><br><br>
+        <a href="https://www.landrover-vn.com/retailer-locator" class="den" style="text-decoration: none;">TÌM HIỂU
+            THÊM</a>
+    </div>
+    <div class="row vung02">
+        <div class="col-md-4 TraI">
+            <b>
+                <h1>ĐỪNG QUÊN CẬP NHẬT</h1>
+            </b><br>
+            <p>Quý khách có thể cập nhật không dây cho chiếc xe Land Rover của mình thông qua hệ thống thông tin giải
+                trí
+                trên xe. Điều này cho phép Quý khách cập nhật một cách thuận tiện lên phần mềm mới nhất tại thời điểm
+                phù
+                hợp mà không cần phải đến Đại lý. Chỉ cần bật dữ liệu di động hoặc kích hoạt Wi-Fi trên xe. Điều này
+                cũng
+                giúp cho chiếc xe luôn đạt hiệu suất cao nhất bằng cách duy trì các hệ thống chính, chẳng hạn như
+                InControl
+                Touch Pro và hệ thống kết nối trên xe.</p><br><br>
+            <p>Cập nhật không dây có sẵn trên các mẫu xe mới nhất. Đối với các mẫu xe được sản xuất từ năm 2016 đến năm
+                2018, hãy liên hệ với Đại lý gần nhất để tìm hiểu chiếc Land Rover của Quý khách có đủ điều kiện để nâng
+                cấp
+                phần mềm hay không.</p><br><br><br>
+            <a href="https://www.landrover-vn.com/ownership-software-update" class="den"
+                style="text-decoration: none;">TÌM HIỂU THÊM</a>
+        </div>
+        <div class="col-md-8 PhaI">
+            <img src="images/hinhv1_01.jpg" />
+        </div>
+    </div>
+    <div class="vung03">
+        <b>
+            <h1>CÁC MẪU XE</h1>
+        </b>
+    </div>
+    <div class="row vung04">
+        <div class="col-md-3">
+            <img src="images/hinhv4_01.jpg" />
+            <h1>RANGE ROVER</h1>
+            <p>Giá từ ₫ 7.985.000.000</p>
+            <p>Đỉnh cao của khả năng chế tạo</p>
+            <a href="https://www.landrover-vn.com/vehicles-range-rover">&gt;TỔNG QUAN</a></br>
+            <a href="https://www.landrover-vn.com/c/rr">&gt;XÂY DỰNG CẤU HÌNH RIÊNG</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/hinhv4_02.jpg" />
+            <h1>RANGE ROVER SPORT</h1>
+            <p>Giá từ ₫ 5.139.000.000</p>
+            <p>Chiếc Land Rover nhanh nhẹn và năng động nhất</p>
+            <a href="https://www.landrover-vn.com/vehicles-range-rover-sport">&gt;TỔNG QUAN</a></br>
+            <a href="https://www.landrover-vn.com/c/rrs">&gt;XÂY DỰNG CẤU HÌNH RIÊNG</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/hinhv4_03.jpg" />
+            <h1>RANGE ROVER VELAR</h1>
+            <p>Giá từ ₫ 4.030.000.000</p>
+            <p>Chiếc Land Rover tiên phong</p>
+            <a href="https://www.landrover-vn.com/vehicles-range-rover-velar">&gt;TỔNG QUAN</a></br>
+            <a href="https://www.landrover-vn.com/c/rrv">&gt;XÂY DỰNG CẤU HÌNH RIÊNG</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/hinhv4_04.jpg" />
+            <h1>RANGE ROVER EVOQUE</h1>
+            <p>Giá từ ₫ 2.950.000.000</p>
+            <p>Thời khắc để khẳng định sự khác biệt</p>
+            <a href="https://www.landrover-vn.com/vehicles-range-rover-evoque">&gt;TỔNG QUAN</a>
+        </div>
+    </div>
+    <div class="row vung05">
+        <div class="col-md-3">
+            <img src="images/hinhv5_01.jpg" />
+            <h1>RANGE ROVER: MỘT LỊCH SỬ</h1>
+            <p>Từ nguyên mẫu concept tối mật cho tới chiếc mui trần đầu tiên, chúng tôi vén bức màn lịch sử về sự tiến
+                hóa
+                đã tạo nên thương hiệu Range Rover ngày nay.</p>
+        </div>
+        <div class="col-md-3">
+            <img src="images/hinhv5_02.jpg" />
+            <h1>TIN MỚI</h1>
+            <p>Cập nhật những thông tin, bài giới thiệu sản phẩm Land Rover mới</p>
+            <a href="https://www.landrover-vn.com/news">&gt;TÌM HIỂU THÊM</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/hinhv5_03.jpg" />
+            <h1>QUYỀN SỞ HỮU</h1>
+            <p>Tìm hiểu mọi thông tin bạn cần liên quan tới các dịch vụ chăm sóc và bảo hành cũng như các hướng dẫn để
+                bạn
+                khai thác tối đa các công nghệ và tính năng trên chiếc Land Rover của mình.</p>
+            <a href="https://www.landrover-vn.com/ownership">&gt;TÌM HIỂU THÊM</a>
+        </div>
+        <div class="col-md-3">
+            <img src="images/hinhv5_04.jpg" />
+            <h1>XE ĐÃ QUA SỬ DỤNG</h1>
+            <p>Lựa chọn một chiếc Land Rover đã qua sử dụng và được kiểm định chính hãng. Không chỉ mua xe mà bạn còn
+                tiếp
+                cận với những chuyến phiêu lưu và các đột phá trong suốt 65 năm qua.</p>
+            <a href="http://approved.vn.landrover.com/?_ga=2.157773882.16703992.1631000916-862892867.1629954246">&gt;TÌM
+                XE</a>
+        </div>
+    </div>
+    <div class="row vung06">
+        <div class="col-md-3 gachdoc">
+            <a href="https://www.landrover-vn.com/k"><i class="fa fa-envelope-o" aria-hidden="true"></i></br>&gt;CẬP
+                NHẬP THÔNG TIN</a>
+            <P>Đăng ký để nhận tất cả những tin tức mới nhất</P>
+        </div>
+        <div class="col-md-3 gachdoc">
+            <a href="https://www.landrover-vn.com/t"><i class="fa fa-car" aria-hidden="true"></i></br>&gt;ĐẶT LỊCH LÁI
+                THỬ</a>
+            <p>Đặt lịch lái thử xe tại đại lý gần nhất</p>
+        </div>
+        <div class="col-md-3 gachdoc">
+            <a href="https://www.landrover-vn.com/brochures"><i class="fa fa-book"
+                    aria-hidden="true"></i></i></br>&gt;TẢI TÀI LỆU</a>
+            <p>Xem và tải tài liệu mới nhất của Land Rover.</p>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.landrover-vn.com/retailer-locator"><i class="fa fa-map-marker"
+                    aria-hidden="true"></i></br>&gt;TÌM ĐẠI LÝ</a>
+            <p>Tìm đại lý Land Rover gần nhất</p>
+        </div>
+    </div>
+    <div class="row vung07">
+        <div class="col-md-3">
+            <ul>
+                <li class="li1"><b>CÁC MẪU XE</b></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/our-vehicles">KHÁM PHÁ CÁC MẪU XE</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/range-rover">RANGE ROVER</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/range-rover-sport">RANGE ROVER SPORT</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/range-rover-velar">RANGE ROVER VELAR</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/vehicles-new-range-rover-evoque">RANGE ROVER
+                        EVOQUE</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/discovery">DISCOVERY</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/vehicles-new-discovery-sport">DISCOVERY SPORT</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/vehicles-defender">DEFENDER</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/special-vehicle-operations">TRUNG TÂM SPECIAL VEHICLE
+                        OPERATIONS</a></li><br>
+                <li><a id="a3"
+                        href="https://approved.vn.landrover.com/en_vn/searchresults?_ga=2.245790596.16703992.1631000916-862892867.1629954246"
+                        style="font-size: 9px;"><b>XE ĐÃ QUA SỬ DỤNG CHÍNH HÃNG</b></a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li class="li1"><b>CÔNG CỤ HỖ TRỢ</b></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/t">ĐẶT LỊCH LÁI THỬ</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/brochures">TẢI TÀI LIỆU</a></li>
+                <li><a id="a3"
+                        href="https://cdn-jaguarlandrover.com/system/apio/vn/VN_LandRover_PriceSheet.pdf?_ga=2.245790596.16703992.1631000916-862892867.1629954246">TẢI
+                        BẢNG GIÁ</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/k">ĐĂNG KÝ NHẬN THÔNG TIN</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/dealer-locator">TÌM KIẾM ĐẠI LÝ</a></li>
+                <li class="li1"><b>CHỦ SỞ HỮU</b></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/owners-servicing">DỊCH VỤ VÀ BẢO TRÌ</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/ownership-warranty">HỖ TRỢ TRÊN ĐƯỜNG</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/ownership-mobility">DỊCH VỤ LƯU ĐỘNG</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/owners-accessories">PHỤ KIỆN</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/incontrol-index">HỆ THỐNG INCONTROL</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/branded-goods">BỘ SƯU TẬP BRANDED GOODS</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li class="li1"><b>KHÁM PHÁ</b></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/experience-land-rover-experience">LR EXPERIENCE</a>
+                </li>
+                <li><a id="a3" href="https://www.landrover-vn.com/experiences-classic-experiences">TRẢI NGHIỆM CỔ
+                        ĐIỀN</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/experiences-behind-the-scenes-tours">HẬU TRƯỜNG HÀNH
+                        TRÌNH</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/experiences-adventure-travel-namibia">DU LỊCH PHIÊU
+                        LƯU NAMABIA</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/experience-events-sponsorship">TÀI TRỢ</a></li>
+                <li><a id="a3" href="https://www.landrover-vn.com/explore-land-rover-articles">THÔNG TIN</a></li>
+                <li class="li1"><b>ĐỀ XUẤT VÀ TÀI CHÍNH</b></li>
+                <li"><a id="a3" href="https://www.landrover-vn.com/offers">ĐỀ NGHỊ</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <ul>
+                <li class="li1"><b>MẠNG XÃ HỘI</b></li>
+                <li><a href="https://www.facebook.com/vietnamlandrover/"><i class="fa fa-facebook-official fb"
+                            aria-hidden="true"></i>FACEBOOK</a></li>
+                <li><a href="https://www.instagram.com/landrover_vietnam/"><i class="fa fa-instagram ins"
+                            aria-hidden="true"></i>INSTAGRAM</a></li>
+                <li><a href="https://www.youtube.com/channel/UCqD5oxiC1toRmO0jUIUS75g"><i class="fa fa-youtube-play yt"
+                            aria-hidden="true"></i>YOUTUBE</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
